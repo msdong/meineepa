@@ -107,6 +107,21 @@
             background-color: rgba(0,0,0,0.2);
             padding: 15px;
             border-radius: 8px;
+            display: flex; /* Flexbox für das Layout */
+            justify-content: space-between; /* Elemente auseinander schieben */
+            align-items: flex-start; /* Oben ausrichten */
+        }
+
+        .responsible-contact .contact-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .responsible-contact img {
+            height: 40px; /* Kleinere Größe für das Logo im Adressblock */
+            width: auto;
+            align-self: flex-end; /* Logo am unteren Ende des Flex-Containers ausrichten */
+            margin-left: 20px; /* Etwas Abstand zum Text */
         }
         
         footer {
@@ -114,16 +129,18 @@
             margin-top: 40px;
             font-size: 0.9em;
             color: #64748B;
-            display: flex; /* Flexbox für das Footer-Element */
-            align-items: center; /* Vertikale Zentrierung */
-            justify-content: center; /* Horizontale Zentrierung */
-            gap: 8px; /* Abstand zwischen Logo und Text */
+            /* Flexbox für den Footer-Text, damit das Logo richtig integriert werden kann */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
 
         footer img {
             height: 1.2em; /* Größe des Logos an die Textzeile anpassen */
             vertical-align: middle; /* Vertikale Ausrichtung mit dem Text */
         }
+
 
         @media (max-width: 600px) {
             body {
@@ -142,6 +159,14 @@
             h2 {
                 font-size: 1.3em;
             }
+            .responsible-contact {
+                flex-direction: column; /* Stapeln auf kleinen Bildschirmen */
+                align-items: flex-start;
+            }
+            .responsible-contact img {
+                margin-top: 10px;
+                margin-left: 0; /* Abstand auf 0 setzen */
+            }
         }
     </style>
 </head>
@@ -159,11 +184,14 @@
 
             <h2>1. Verantwortlicher</h2>
             <div class="responsible-contact">
-                <p>Dumango Softwareentwicklung<br>
-                Andreas Stammer<br>
-                Behringstr. 12<br>
-                76646 Bruchsal<br>
-                E-Mail: <a href="mailto:support@dumango.com">support@dumango.com</a></p>
+                <div class="contact-details">
+                    <p>Dumango Softwareentwicklung<br>
+                    Andreas Stammer<br>
+                    Behringstr. 12<br>
+                    76646 Bruchsal<br>
+                    E-Mail: <a href="mailto:support@dumango.com">support@dumango.com</a></p>
+                </div>
+                <img src="dumango_logo.png" alt="Dumango Logo"> 
             </div>
 
             <h2>2. Grundprinzip: Lokale Datenverarbeitung ("Local First")</h2>
@@ -216,7 +244,7 @@
         </main>
         
         <footer>
-            <p>&copy; 2025 Meine ePA - <img src="dumangologo.png" alt="DumangoLogo"> Dumango Softwareentwicklung - Andreas Stammer</p>
+            <p>&copy; 2025 Meine ePA - Dumango Softwareentwicklung - Andreas Stammer</p>
         </footer>
     </div>
 
