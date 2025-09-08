@@ -114,6 +114,15 @@
             margin-top: 40px;
             font-size: 0.9em;
             color: #64748B;
+            display: flex; /* Flexbox für das Footer-Element */
+            align-items: center; /* Vertikale Zentrierung */
+            justify-content: center; /* Horizontale Zentrierung */
+            gap: 8px; /* Abstand zwischen Logo und Text */
+        }
+
+        footer img {
+            height: 1.2em; /* Größe des Logos an die Textzeile anpassen */
+            vertical-align: middle; /* Vertikale Ausrichtung mit dem Text */
         }
 
         @media (max-width: 600px) {
@@ -207,7 +216,7 @@
         </main>
         
         <footer>
-            <p>&copy; 2025 Meine ePA - Dumango Softwareentwicklung - Andreas Stammer</p>
+            <p><img src="dumangologo.png" alt="DumangoLogo">&copy; 2025 Meine ePA - Dumango Softwareentwicklung - Andreas Stammer</p>
         </footer>
     </div>
 
