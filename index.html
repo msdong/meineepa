@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung – Meine ePA & MeshNote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #0F172A;
+            --text-color: #CBD5E1;
+            --heading-color: #FFFFFF;
+            --accent-color: #12C2CC;
+            --surface-color: #1E293B;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 980px;
+            margin: 20px auto;
+            background-color: var(--surface-color);
+            padding: 30px 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+        header img { width: 80px; height: 80px; }
+        h1 { font-size: 2.2em; color: var(--heading-color); margin: 0; }
+        h1 span { font-size: .5em; color: var(--text-color); font-weight: 400; display: block; margin-top: 6px; }
+        h2 {
+            font-size: 1.5em; color: var(--accent-color);
+            margin-top: 40px; margin-bottom: 14px; padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h3 { margin: 18px 0 8px; color: #E2E8F0; }
+        p { margin-bottom: 14px; }
+        ul { list-style: none; padding-left: 0; margin: 0 0 12px; }
+        li { padding-left: 25px; position: relative; margin-bottom: 10px; }
+        li::before { content: '✓'; position: absolute; left: 0; color: var(--accent-color); font-weight: 700; }
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .responsible-contact {
+            background-color: rgba(0,0,0,0.2);
+            padding: 16px; border-radius: 10px;
+            display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+        }
+        .responsible-contact img { height: 40px; width: auto; align-self: flex-end; opacity:.9; }
+        .note { font-size: .95em; color: #94A3B8; }
+        .chip {
+            display:inline-block; border:1px solid rgba(255,255,255,.12);
+            border-radius: 999px; padding: 2px 10px; margin: 2px 6px 8px 0; font-size:.85em; color:#A3B7D5;
+        }
+        footer {
+            text-align: center; margin-top: 40px; font-size: .9em; color: #64748B;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        footer img { height: 1.2em; vertical-align: middle; }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            header { flex-direction: column; text-align: center; }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.3em; }
+            .responsible-contact { flex-direction: column; }
+            .responsible-contact img { align-self: flex-start; margin-top: 6px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <img src="dumangologo.png" alt="Dumango">
+        <h1>Datenschutzerklärung <span>für die Apps „Meine ePA“ und „MeshNote“</span></h1>
+    </header>
+
+    <main>
+        <p><strong>Stand: 12. September 2025</strong></p>
+        <p>Mit dieser Erklärung informieren wir Sie über die Verarbeitung personenbezogener Daten in unseren mobilen Apps
+            <strong>„Meine ePA“</strong> und <strong>„MeshNote“</strong> (nachfolgend gemeinsam „App“). Beide Apps folgen dem
+            Grundprinzip <em>Local-First</em>: Ihre Daten bleiben auf Ihrem Gerät und werden nur dann übertragen, wenn Sie dies ausdrücklich auslösen (z. B. beim sicheren Teilen einzelner Dokumente oder bei einer freiwilligen, geräte-zu-gerät-basierten Mesh-Sitzung).</p>
+
+        <h2>1. Verantwortlicher</h2>
+        <div class="responsible-contact">
+            <div>
+                <p><strong>Dumango Softwareentwicklung</strong><br>
+                    Andreas Stammer<br>
+                    Behringstr. 12<br>
+                    76646 Bruchsal<br>
+                    E-Mail: <a href="mailto:support@dumango.com">support@dumango.com</a></p>
+            </div>
+            <img src="dumangologo.png" alt="Dumango Logo">
+        </div>
+
+        <h2>2. Rechtsgrundlagen</h2>
+        <p>Wir verarbeiten Daten ausschließlich zur Bereitstellung der App-Funktionen. Rechtsgrundlagen nach Art. 6 DSGVO sind insbesondere:</p>
+        <ul>
+            <li>Art. 6 Abs. 1 lit. b DSGVO (Vertrag/vertragsähnliches Nutzungsverhältnis) für Kernfunktionen der App,</li>
+            <li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) für optionale Funktionen wie das sichere Teilen, Benachrichtigungen oder Biometrie,</li>
+            <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse) für rein technische Logdaten auf dem Gerät (z. B. Fehlerdiagnose lokal).</li>
+        </ul>
+
+        <h2>3. Grundprinzip: Lokale Verarbeitung („Local-First“)</h2>
+        <p>Alle gesundheitsbezogenen Inhalte (Dokumente, Diagnosen, Vitalwerte, Blutwerte, Notfall-/Medikationsdaten) sowie Notizen/Whiteboards werden <strong>ausschließlich lokal</strong> gespeichert und – falls konfiguriert – <strong>verschlüsselt</strong> abgelegt. Ohne Ihre aktive Handlung verlassen diese Daten das Gerät nicht.</p>
+        <div class="chip">AES-256-GCM (lokale Verschlüsselung)</div>
+        <div class="chip">Biometrische App-Sperre (optional)</div>
+        <div class="chip">Geräte-zu-Gerät (Nearby/Bluetooth/WLAN) ohne Server</div>
+
+        <h2>4. Verarbeitete Datenarten und Zwecke</h2>
+        <h3>4.1 Profildaten</h3>
+        <p>Optionaler Anzeigename, ggf. E-Mail und Profilbild zur Personalisierung (z. B. Wasserzeichen beim Teilen, Anzeigename in Mesh-Sitzungen). Speicherung lokal.</p>
+
+        <h3>4.2 Gesundheits- und Dokumentendaten („Meine ePA“)</h3>
+        <p>Von Ihnen eingegebene/gescannte Inhalte (z. B. Diagnosen, Medikationspläne, Vital-/Blutwerte, Termine, Notfalldaten, PDF/JPG-Dokumente) werden lokal gespeichert und können innerhalb der App bearbeitet oder gelöscht werden.</p>
+
+        <h3>4.3 Notizen & Whiteboard („MeshNote“)</h3>
+        <p>Notizen/Whiteboards samt Zuständen (Zeichenpfade, Texte, eingebettete Bilder) werden lokal gesichert. Für Echtzeit-Sitzungen können diese Inhalte <em>direkt</em> an verbundene Geräte im selben Mesh übertragen werden (siehe Abschnitt 7); es erfolgt <strong>keine</strong> Weiterleitung über unsere Server.</p>
+
+        <h3>4.4 Lokale Aktivitätsprotokolle</h3>
+        <p>Zur Nachvollziehbarkeit protokolliert die App ausgewählte Aktionen (z. B. „Dokument gelöscht“, „Termin angelegt“) ausschließlich lokal. Keine Übermittlung an uns.</p>
+
+        <h2>5. Datensicherheit</h2>
+        <ul>
+            <li><strong>Lokale Verschlüsselung:</strong> Dateien werden mit AES-256-GCM (AndroidX Security) verschlüsselt.</li>
+            <li><strong>App-Sperre:</strong> Optionaler Zugriffsschutz via PIN/biometrisch (Fingerabdruck/Gesicht).</li>
+            <li><strong>Transportsicherheit:</strong> Bei Mesh-Sitzungen erfolgt die Übertragung geräte-zu-gerät; optional kann ein Sitzungstoken/Schlüssel zum zusätzlichen Schutz verwendet werden.</li>
+        </ul>
+
+        <h2>6. Berechtigungen (Permissions)</h2>
+        <p>Die App fragt nur Berechtigungen an, die für Kernfunktionen notwendig sind:</p>
+        <ul>
+            <li><strong>Kamera (CAMERA):</strong> Scannen von Dokumenten und Bildern (OCR lokal).</li>
+            <li><strong>Benachrichtigungen (POST_NOTIFICATIONS):</strong> Termin-/Aufgaben-Erinnerungen.</li>
+            <li><strong>Biometrie (USE_BIOMETRIC / DEVICE_CREDENTIAL):</strong> App-Sperre.</li>
+            <li><strong>Exakte Alarme (SCHEDULE_EXACT_ALARM):</strong> Zuverlässige Erinnerungen.</li>
+            <li><strong>Bluetooth & Nearby (BLUETOOTH_SCAN / ADVERTISE / CONNECT, NEARBY_WIFI_DEVICES):</strong> Nur für freiwillige Mesh-Sitzungen.</li>
+            <li><strong>Standort (ACCESS_FINE_LOCATION):</strong> Erforderlich von Android für Bluetooth-/Nearby-Scans (ohne Standortaufzeichnung durch uns).</li>
+        </ul>
+
+        <h2>7. Mesh-Kommunikation (MeshNote)</h2>
+        <p>Beim Start einer Mesh-Sitzung (Host/Join) werden Geräte in der Nähe über Google Nearby Connections erkannt und direkt verbunden:</p>
+        <ul>
+            <li><strong>Endpoint-Name:</strong> enthält den von Ihnen gewählten Anzeigenamen; optional zusätzlich einen Mesh-Netzwerknamen und eine Kurz-ID zur Kopplung.</li>
+            <li><strong>Datenfluss:</strong> Whiteboard-Ereignisse, Notizen und Präsenzsignale werden ausschließlich zwischen den beteiligten Geräten ausgetauscht (P2P). <strong>Keine</strong> Übertragung an unsere Server.</li>
+            <li><strong>Sichtbarkeit:</strong> Nur während einer offenen Sitzung sichtbar; Beenden der Sitzung widerruft Einladungen und stoppt die Übertragung.</li>
+        </ul>
+        <p class="note">Hinweis: Android verlangt für das Scannen/Verbinden u. U. Standort-/Bluetooth-Berechtigungen, auch wenn die App keinen Standort erfasst oder speichert.</p>
+
+        <h2>8. Sicheres Dokument-Teilen (optional)</h2>
+        <p>Wenn Sie in „Meine ePA“ (und ggf. aus MeshNote heraus) ein Dokument per Link teilen, findet eine <strong>Ende-zu-Ende-Verschlüsselung</strong> statt. Nur in diesem Fall werden Daten an externe Dienste übertragen:</p>
+        <ul>
+            <li><strong>Speicherort:</strong> Verschlüsselte Datei in <em>Firebase Storage</em> (Google Ireland Ltd.).</li>
+            <li><strong>Metadaten:</strong> Minimal notwendige Link-Infos (Ablaufdatum, anonyme Nutzer-ID) in <em>Cloud Firestore</em>.</li>
+            <li><strong>Authentifizierung:</strong> Anonyme Firebase-ID – keine Klarnamenzuordnung.</li>
+            <li><strong>Kontrolle:</strong> Links sind zeitlich begrenzt und jederzeit widerrufbar.</li>
+        </ul>
+        <p>Weitere Informationen zu Google finden Sie unter <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.
+           Eine Verarbeitung kann in der EU/EWR und – in Einzelfällen – in Drittländern unter Einsatz von Standardvertragsklauseln erfolgen.</p>
+
+        <h2>9. Empfänger von Daten</h2>
+        <p>Ohne Ihre aktive Nutzung der o. g. optionalen Funktionen (Teilen, Mesh) <strong>erhalten keine Dritten</strong> Zugriff auf Ihre Inhalte. Bei Nutzung des Teilens sind Empfänger ausschließlich die benannten Cloud-Dienste (Google Firebase) – jedoch nur in verschlüsselter Form.</p>
+
+        <h2>10. Speicherdauer</h2>
+        <ul>
+            <li><strong>Lokal:</strong> Bis zur Löschung durch Sie oder Deinstallation der App.</li>
+            <li><strong>Geteilte Links:</strong> Bis zum Ablauf des von Ihnen gewählten Zeitfensters oder manuellen Widerruf.</li>
+            <li><strong>Protokolle (lokal):</strong> Rotierend/begrenzt zur Übersicht, verbleiben auf dem Gerät.</li>
+        </ul>
+
+        <h2>11. Ihre Rechte</h2>
+        <p>Sie haben – im Rahmen der DSGVO – Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch. Da Ihre Daten lokal gespeichert sind, können Sie die meisten Rechte unmittelbar in der App ausüben (z. B. Löschen in den Einstellungen).</p>
+        <p>Für Anliegen wenden Sie sich bitte an: <a href="mailto:support@dumango.com">support@dumango.com</a>.</p>
+
+        <h2>12. Änderungen dieser Erklärung</h2>
+        <p>Wir passen diese Erklärung an, wenn technische oder rechtliche Änderungen dies erforderlich machen. Die jeweils aktuelle Fassung ist in der App bzw. über unsere Projektseiten einsehbar.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meine ePA & MeshNote – <img src="dumangologo.png" alt="Dumango Logo"> Dumango Softwareentwicklung · Andreas Stammer</p>
+    </footer>
+</div>
+</body>
+</html>
+
